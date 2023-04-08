@@ -4,10 +4,10 @@ const Navbar = () => {
   const navListItems = (
     <>
       <li>
-        <Link href={"/cleaning_service"}>Service </Link>
+        <Link href={"/services"}>Service </Link>
       </li>
       <li>
-        <Link href={"/cleaning_service/packages"}>Package</Link>
+        <Link href={"/services/packages"}>Package</Link>
       </li>
       <li>
         <Link href={"/about"}>About Us</Link>

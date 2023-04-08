@@ -1,8 +1,8 @@
 import Image from 'next/image';
 const Carousel = () => {
   return (
-    <div className="carousel w-full">
-      <div id="slide1" className="carousel-item relative w-full">
+    <div className="carousel w-full ">
+      <div id="slide1" className="carousel-item relative w-full ">
         <Image
           src="/bannerImage1.jpg"
           className="w-full"
