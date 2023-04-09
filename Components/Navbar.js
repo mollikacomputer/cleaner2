@@ -18,9 +18,6 @@ const Navbar = () => {
       <li>
         <Link href={"/contact"}>Contact us</Link>
       </li>
-      <li>
-        <Link href={"/blog"}>Blog</Link>
-      </li>
     </>
   );
 
