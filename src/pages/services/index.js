@@ -1,9 +1,5 @@
-import Link from "next/link";
 import Service from "../../../Components/Service";
-
-
-const index = ({services}) => {
-    
+const index = ({services}) => { 
   return (
     <div className="bg-white my-16 items-center justify-center">
       <h2 className="text-5xl my-6">
@@ -17,9 +13,8 @@ const index = ({services}) => {
     </div>
   );
 };
-
 export const getStaticProps = async () => {
-    const res = await fetch("http://localhost:3000/api/services");
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts/");
     const data = await res.json();
     return {
       props: {
@@ -27,5 +22,4 @@ export const getStaticProps = async () => {
       },
     };
   };
-  
 export default index;

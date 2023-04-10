@@ -41,7 +41,7 @@ const serviceId = ({ service }) => {
 export const getStaticProps = async (context) => {
   const { params } = context;
   const res = await fetch(
-    `http://localhost:3000/api/services/${params?.serviceId}`
+    `https://jsonplaceholder.typicode.com/posts/${params?.serviceId}`
   );
   const data = await res.json();
   return {
@@ -53,7 +53,7 @@ export const getStaticProps = async (context) => {
 
 export const getStaticPaths = async () => {
   // at this link will be single server data check browser first
-  const res = await fetch("http://localhost:3000/api/services");
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts/");
   const services = await res.json();
   const paths = services.map((service) => {
     return {
