@@ -27,7 +27,7 @@ const serviceId = ({ service }) => {
           </figure>
           <div class="card-body">
             <h2 class="card-title"> {service.title} </h2>
-            <p>{service.description}</p>
+            <p>{service.body}</p>
             <Link href={"/services"}>
               <button class="btn btn-outline btn-primary">Back to Service</button>
             </Link>
